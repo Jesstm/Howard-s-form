@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Howard's inscrption form</title>
+    </header>
+    <body>
+      <h1 class="title" id="title">Howard's Inscription Form</h1>
+
+      <form >
+        <p id="description">If you really want to enter this prestigious school, you just have to fill out this form and wait.<br>
+          P.S: the school reserves the rights of admission.</p>
+          
+        <blockquote class="cite">" It is our choices that show what we truly are, far more than our abilities.” <br>
+            <cite> (Albus Dumbledore)</cite>
+
+        </blockquote>
+        <fieldset >
+          <label class="form_label" id="name-label"> Name: <input class= "form_imput" type="text" id="name" name=" name" required  placeholder="Enter your Muggle name" /></label>
+          <label class="form_label" id="email-label">Email: <input class= "form_imput"  id="email" type="email" name="email" required placeholder="Enter your Muggle email" /></label>
+          <label class="form_label" id="number-label">Input your age (years): <input class= "form_imput" type="number" id="number" name="age" min="10" max="120" placeholder="Enter your muggle age" required/>
+          </label>
+        </fieldset>
+        <fieldset>
+          <p>How do you know about us?</p>
+          <select id="dropdown" name="invitation" required>
+            <option disabled selected value>(select one)</option>
+            <option value="newspaper">Daily Prophet</option>
+            <option value="gossip">Family and Friends</option>
+            <option value="curiosity">The movies</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+        <fieldset class="selected">
+          <p>Wich house do you preffer?</p>
+          <label class="label_radius"><input class="house" type="radio" name="favorite-house" /> Gryffindor </label>
+          <label class="label_radius"><input class="house" type="radio" name="favorite-house" /> Hufflepuff </label>
+          <label class="label_radius"><input class="house" type="radio" name="favorite-house" /> Ravenclaw </label>
+          <label class="label_radius"><input class="house" type="radio" name="favorite-house" /> Slytherin </label>
+          <p>What are your best qualities?</p>
+          <label class="label_check"><input class="caracteristic" type="checkbox" name="caracter" /> Bravery </label>
+          <label class="label_check"><input class="caracteristic" type="checkbox" name="caracter" /> Disposition </label>
+          <label class="label_check"><input class="caracteristic" type="checkbox" name="caracter" /> Courage </label>
+          <label class="label_check"><input class="caracteristic" type="checkbox" name="caracter" /> Chivalry </label>
+          <label class="label_check"><input class="caracteristic" type="checkbox" name="caracter" /> Loyal</label>
+          <label class="label_check"><input class="caracteristic" type="checkbox" name="caracter" /> Honest </label>
+          <label class="label_check"><input class="caracteristic" type="checkbox" name="caracter" /> Not afraid of heavy work </label>
+          <label class="label_check"><input class="caracteristic" type="checkbox" name="caracter" /> Ambition </label>
+          <label class="label_check"><input class="caracteristic" type="checkbox" name="caracter" /> Cunning </label>
+        </fieldset>
+        <fieldset>
+          <label class="p">Explain why you should be accepted at howards:
+            <textarea name="bio" rows="3" cols="30" placeholder="I should be accepted because..."></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+      </form>
+    </body>
+  </html>
